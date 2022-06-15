@@ -1,0 +1,67 @@
+{% extends "mail/layout.html" %} {% block body %}
+
+<div class="register_page">
+  <h2>Register</h2>
+  {% if message %}
+  <div>{{ message }}</div>
+  {% endif %}
+
+  <form action="{% url 'register' %}" method="post">
+    {% csrf_token %}
+    <div class="form-group" id="form_div">
+      <input
+        type="text"
+        autofocus
+        id="name"
+        class="form-control"
+        name="first_name"
+        placeholder="First name"
+        autocomplete="off"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        type="text"
+        autofocus
+        id="name"
+        class="form-control"
+        name="last_name"
+        placeholder="Last name"
+        autocomplete="off"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        autofocus
+        type="email"
+        name="email"
+        placeholder="Email Address"
+        autocomplete="off"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        autofocus
+        type="password"
+        name="password"
+        placeholder="Password"
+        autocomplete="off"
+      />
+    </div>
+    <div class="form-group">
+      <input
+        class="form-control"
+        type="password"
+        name="confirmation"
+        placeholder="Confirm Password"
+        autocomplete="off"
+      />
+    </div>
+    <input class="btn btn-primary" type="submit" value="Register" />
+  </form>
+  <p style="color: white">Already have an account?</p>
+  <a href="{% url 'login' %}">Log In here.</a>
+</div>
+{% endblock %}

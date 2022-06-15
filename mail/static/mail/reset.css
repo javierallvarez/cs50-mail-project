@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,700;0,800;1,100;1,300;1,500;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,800;1,400;1,800&display=swap");
+
+:root {
+  --darkwhite: #d8d8d8;
+  --darkwhite_opacity: #dededebd;
+  --softwhite: #eeeded;
+  --primary: #4674fd;
+  --primary_opacity: #2c3333;
+  --secondary: rgb(255, 252, 55);
+  --secondary_opacity: #2eafe8;
+  --hotblack: #212225;
+  --hotblack_opacity: #0d0e1088;
+  --hotgreen: #33e584;
+  --hotgreen_opacity: #33e5833d;
+  --font-1: "Poppins", sans-serif;
+  --font-2: "Bodoni Moda", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-1);
+  background: linear-gradient(
+      to left,
+      #0c357665 5%,
+      #677c9b59 15%,
+      rgba(64, 224, 208, 0.283) 100%
+    ),
+    url(https://www.descubrirelarte.es/wp-content/uploads/2014/10/2892-1024x779.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 300;
+  margin: 0;
+}

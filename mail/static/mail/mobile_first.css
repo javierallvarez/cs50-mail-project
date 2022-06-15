@@ -1,0 +1,312 @@
+.cont {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  height: 80px;
+  margin: 1rem 0;
+}
+
+.subheader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+}
+
+.logo {
+  margin-top: 10px;
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 0 0 3px 0;
+  font-weight: 900;
+  background-size: 0.05em 0.05em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #6f21d100;
+  text-shadow: 0em 0.25em 0 hsl(0deg 0% 97%), 0em 0.16em 0 #212528,
+    0em 0.1em 0 hsl(0deg 0% 88%);
+}
+
+header h2 {
+  font-size: 9px;
+  font-family: var(--font-2);
+  font-weight: 700;
+  color: var(--softwhite);
+  text-align: center;
+  font-style: italic;
+  margin: 2px 0 0 0;
+  background-color: #212528;
+  border-radius: 5px;
+}
+
+.tribute {
+  display: none;
+}
+
+header h1 span {
+  text-shadow: 0em 0.25em 0 var(--secondary), 0em 0.16em 0 rgb(33 37 40),
+    0em 0.1em 0 var(--secondary);
+}
+
+header h2 span {
+  color: var(--secondary);
+}
+
+nav {
+  padding: 5px;
+  background: linear-gradient(
+      to top,
+      #0c3576d0 5%,
+      #677c9bdc 15%,
+      rgba(68, 177, 170, 0.913) 100%
+    ),
+    url(https://www.descubrirelarte.es/wp-content/uploads/2014/10/2892-1024x779.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 2rem;
+  height: 200px;
+  width: 95%;
+  text-align: center;
+  box-shadow: 7px -4px 5px 0px rgba(167, 166, 166, 0.283);
+}
+
+nav i {
+  color: var(--softwhite);
+  font-size: 20px;
+}
+
+nav i:hover {
+  color: var(--hotblack_opacity);
+  transition: 0.6s;
+  border: transparent;
+  background: transparent;
+}
+
+.wrapper {
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  bottom: 0;
+  border-radius: 30px 30px 0 0;
+  padding: 30px 0 0 0;
+  box-shadow: 7px -4px 5px 0px rgba(167, 166, 166, 0.338);
+  background: linear-gradient(
+    180deg,
+    rgb(240, 240, 240) 0%,
+    rgb(182, 180, 180) 3%,
+    #7a7a7a 9%,
+    rgb(240, 240, 240) 20%
+  );
+  overflow: scroll;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#emails-view {
+  text-align: center;
+}
+
+.mailbox_name {
+  color: var(--softwhite);
+  font-size: 20px;
+  margin-bottom: 1.2rem;
+}
+
+#compose-view h3 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.table-light {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  background-color: var(--darkwhite);
+  cursor: pointer;
+  border-top: 1px solid var(--secondary);
+}
+
+.table-light:hover {
+  background-color: turquoise;
+  transition: 0.6s;
+}
+
+.email_card {
+  width: 80%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 10px;
+  padding: 0 20px;
+  text-align: start;
+}
+
+.email_card p {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.card_left {
+  height: 100%;
+  width: 80px;
+  position: relative;
+  left: 0;
+  bottom: 0;
+}
+
+.green_point {
+  height: 100%;
+  background-color: var(--hotgreen);
+  color: var(--hotgreen);
+}
+
+.eBody {
+  width: 100%;
+  overflow: hidden;
+}
+
+#timestamp {
+  color: var(--hotblack_opacity);
+  font-size: 10px;
+}
+
+.email_read {
+  font-weight: 700;
+  background-color: white;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px 0px rgba(128, 128, 128, 0.486);
+  position: absolute;
+  left: 12px;
+  cursor: context-menu;
+}
+
+.user_avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  box-shadow: 4px 4px 5px 0px rgba(128, 128, 128, 0.486);
+  margin: 0 10px;
+  cursor: context-menu;
+}
+
+.avatar h3,
+.user_avatar h3 {
+  text-align: center;
+  font-weight: 900;
+  font-size: 28px;
+  margin: 0px;
+  color: var(--darkwhite);
+  text-shadow: var(--primary) 1px 1px, var(--primary) 2px 2px,
+    var(--primary) 3px 3px, var(--primary) 4px 4px, var(--primary) 5px 5px;
+}
+
+/* -----------COMPOSE---------- */
+
+#compose-view {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#compose-body {
+  height: 150px;
+}
+
+#compose-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--hotblack);
+  width: 90%;
+}
+
+.form-group {
+  width: 100%;
+}
+
+/* -----------REGISTER---------- */
+
+.btn-primary {
+  background-color: turquoise;
+  border: 1px solid turquoise;
+  font-size: 16px;
+  color: var(--hotblack);
+  width: 120px;
+  margin-top: 1rem;
+  margin-right: 5px;
+}
+
+.btn-primary:hover {
+  transition: 0.6s;
+  border: 1px solid turquoise;
+  background-color: transparent;
+  color: turquoise;
+}
+
+#form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-control {
+  background-color: #ffffffd9;
+}
+
+.login_page,
+.register_page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  margin-top: 2rem;
+  text-align: center;
+  gap: 1rem;
+}
+
+a {
+  color: turquoise;
+}
+
+a:hover {
+  color: rgb(151, 248, 238);
+}
+
+/* -----------CONTENT---------- */
+.email_content {
+  padding: 1rem 2rem;
+  line-height: 18px;
+  background: rgb(240, 240, 240);
+  margin-top: 2.5rem;
+  border-top: 2px solid var(--secondary);
+}
+
+.email_content hr {
+  border-top: 1px solid var(--hotblack);
+  width: 100%;
+}
